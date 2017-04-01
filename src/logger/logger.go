@@ -32,7 +32,7 @@ func Init(config *LoggerConfig) bool {
 	l = log.New(fileHandle, "", log.Ldate|log.Ltime|log.Lshortfile)
 	l.Println("Logger initialised successfully.")
 	//TODO
-	return true
+	return false
 }
 
 func llog(format string, v ...interface{}) {
